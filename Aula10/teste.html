@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando Idade</title>
+    <style>
+        div#area{
+            font: normal 18pt Arial;
+            background: rgb(107, 12, 196);
+            color: rgb(247, 244, 244);            
+            width: 500px;
+            line-height: 50px;
+            text-align: center;
+        }
+        div#corpo {
+            font: normal 18pt Arial;
+            background: rgb(107, 12, 196);
+            color: rgb(247, 244, 244);
+            height: 200px;            
+            width: 500px;
+            line-height: 50px;
+            text-align: center;
+        }
+        input {
+            font: normal 15pt Arial;
+            width: 90px;
+        }
+
+        div#res{
+            margin-top: 20px;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        Calcular Idade
+        
+    </div>
+    <div id="corpo">
+        <div id="nome">Digite Seu Nome: 
+            <input type="text" name="Nome" id="Nome()">
+        </div>
+        <input type="number" name="anoNa" id="anoNa"> -
+        <input type="number" name="anoAt" id="anoAt">
+        <input type="button" value="Calcular" onclick="Calcular()">
+        <div id="res">Resultado</div>
+    </div>
+
+    <script>
+        function Calcular() {
+            var anoNa = window.document.getElementById('anoNa')
+            var anoAt = window.document.getElementById('anoAt')
+            var res = window.document.getElementById('res')
+            var a1 = Number(anoNa.value)
+            var a2 = Number(anoAt.value)
+            var idade = a1 - a2
+            res.innerHTML = `A sua idade é <strong>${idade}</strong> anos.`
+
+        }
+    </script>
+    
+
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OláNerd</title>
+    <style>
+        body {
+            background-color: rgb(44, 22, 141);
+            font: normal 18pt Arial;
+        }
+
+        h1 {
+            color: rgb(220, 117, 20);
+        }
+    </style>
+</head>
+<body>
+    <h1>Ola Vamos fazer calculos!. </h1> <!--Isso é um comentário em Html-->
+    <p>Entre na plataforma e faça alguns calculos!!.</p>
+
+    <script>
+        var nome = window.prompt('Digite seu nome e Sobrenome: ');
+        var numero1 = Number.parseInt(window.prompt('Digite o Primeiro valor: '));
+        var numero2 = Number.parseInt(window.prompt('Digite o Segundo Valor: '))
+        var soma = numero1 + numero2;
+        var subtracao = numero1 - numero2;
+        var multiplicacao = numero1 * numero2;
+        var divisao = numero1 / numero2;
+        var resto = numero1 % numero2
+        var potencia = numero1 ** numero2;
+        //Escrever no documento:
+        document.write(`${nome} o resultado da soma de: ${numero1} + ${numero2}: ${soma}, e o da subtracao de: ${numero1} - ${numero2}: ${subtracao}, e o da multiplicação de: ${numero1} * ${numero2}: ${multiplicacao}, e o da divisao de: ${numero1} / ${numero2}: ${divisao}, e o do resto da divisão de: ${numero1} % ${numero2}: ${resto}, e o da Potência de: ${numero1} ** ${numero2}: ${potencia}.`)
+        // Para fazer a conversao para salario usa-se: ${salario.toLocaleString("pt-br",{style:'currency', currency:'BRL' })}
+        // Gerar um alerta:
+        //window.alert(``O Colaborador(a) <strong>${nome}</strong> com matricula <strong>${matricula}</strong> obteve o salario <strong>${salario.toLocaleString("pt-br",{style:'currency', currency:'BRL' })}</strong> ao final do mês.`)
+    </script>
+</body>
+</html>
+
+

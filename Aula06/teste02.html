@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OláNerd</title>
+    <style>
+        body {
+            background-color: rgb(44, 22, 141);
+            font: normal 18pt Arial;
+        }
+
+        h1 {
+            color: rgb(220, 117, 20);
+        }
+    </style>
+</head>
+<body>
+    <h1>Ola colaborador! Acompanhe seus pagamentos. </h1> <!--Isso é um comentário em Html-->
+    <p>Entre na plataforma e confira seus pagamentos!!.</p>
+
+    <script>
+        var nome = window.prompt('Digite seu nome e Sobrenome: ');
+        var matricula = Number.parseInt(window.prompt('Digite a matricula do colaborador: '));
+        var salario = Number.parseFloat(window.prompt('Informe o valor do Salario (R$): '))
+        //Escrever no documento:
+        document.write(`O Colaborador(a) <strong>${nome}</strong> com matricula <strong>${matricula}</strong> obteve o salario <strong>${salario.toLocaleString("pt-br",{style:'currency', currency:'BRL' })}</strong> ao final do mês.`)
+        // Para fazer a conversao para salario usa-se: ${salario.toLocaleString("pt-br",{style:'currency', currency:'BRL' })}
+        // Gerar um alerta:
+        //window.alert(``O Colaborador(a) <strong>${nome}</strong> com matricula <strong>${matricula}</strong> obteve o salario <strong>${salario.toLocaleString("pt-br",{style:'currency', currency:'BRL' })}</strong> ao final do mês.`)
+    </script>
+</body>
+</html>
+
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OláNerd</title>
+    <style>
+        body {
+            background-color: rgb(44, 22, 141);
+            font: normal 18pt Arial;
+        }
+
+        h1 {
+            color: rgb(220, 117, 20);
+        }
+    </style>
+</head>
+<body>
+    <h1>Ola Alunos!! sejam bem vindos a EscolaTec. </h1> <!--Isso é um comentário em Html-->
+    <p>Vem mudar seu futuro, junto coma gente!!.</p>
+
+    <script>
+        var nome = window.prompt('Digite seu nome e Sobrenome: ');
+        var matricula = Number.parseInt(window.prompt('Digite a matricula do aluno: '));
+        var nota = Number.parseFloat(window.prompt('Informe a nota do aluno: '))
+        //Escrever no documento:
+        document.write(`O Aluno(a) <strong>${nome}</strong> com matricula <strong>${matricula}</strong> obteve a nota <strong>${nota}</strong> ao final do periodo.`)
+        // Gerar um alerta:
+        //window.alert(`O Aluno(a) ${nome} com matricula ${matricula} obteve a nota ${nota} ao final do periodo.`)
+    </script>
+</body>
+</html>

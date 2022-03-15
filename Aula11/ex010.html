@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+    <style>
+        body{
+            background-color: blueviolet;
+            color: white;
+            font: normal 15pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistemas de Multas</h1>
+    Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> Km/h
+    <input type="button" value="Verificar" onclick="Calcular()">
+    <div id="resp">
+
+    </div>
+    <script>
+        function Calcular() {
+            var txtvelo = window.document.querySelector('input#txtvel')
+            var resp = window.document.querySelector('div#resp')
+            var velocidade = Number(txtvelo.value)
+            resp.innerHTML = `<p>Sua velocidade na via é de <strong>${velocidade}Km/h</strong></p>`
+            if(velocidade > 60){
+                resp.innerHTML += `<p>Você está <strong>MULTADO</strong> por excesso de velocidade.</P `
+
+            }
+            resp.innerHTML += `<p>Dirija sempre com cinto de segurança!</p>` // Usa-se o += para concatenar se for so = ele vai apagar a outra informaçao. 
+        }
+    </script>
+</body>
+</html>

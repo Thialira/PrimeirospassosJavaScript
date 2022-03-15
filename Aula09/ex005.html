@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <Style>
+        body {
+            background: rgb(64, 137, 219);
+            color: white;
+            font: normal  18pt Times;
+        }
+    </Style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a suar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg"> Clique Aqui</div>
+
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[1] // para selecionar um elemento usa-se essa tag e ao final voce coloca a numeraçao do elemento que voce quer selecioanar
+        //window.document.write('Está escrito assim: ' + p1.innerText) // innerText é usado para escrever o que esta dentro de algum elemento. Aqui foi usado para mostrar o que esta escrito dentro do 1 paragrafo. 
+        //p1.style.color = 'black'
+        //window.alert(p1.innerHTML) // Ele mostra o conteudo com a formataçao
+        //window.alert(p1.innerText) // Ele mostra o conteudo sem a formataçao
+        //var d = window.document.getElementById('msg')
+        //d.style.background = 'blue'
+        //d.innerText = 'Estou Aguardando....' // Usado para mudar o conteudo do elemento
+
+
+        var d = window.document.querySelector('div#msg') //div#msg se usou a # pq é div, quando é classe utiliza-se o ponto. 
+        d.style.color ='blue'
+
+    </script>
+</body>
+</html>

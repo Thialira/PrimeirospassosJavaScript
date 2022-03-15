@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: rgb(44, 44, 201);
+            color: white; /*Comentário em CSS*/
+            font: normal 20pt Arial;
+        }
+
+        h1 {
+            color: crimson;
+        }
+    </style>
+    <title>Meu primeiro Programa</title>
+</head>
+<body>
+    <h1>Olá, Nerds! </h1> <!--Isso é um comentário em Html-->
+    <p>Seja bem vindo, ao mundo Nerd!</p>
+
+    <script> // Quando usamos o script dentro do html, ele fica localizado, no final do body, pois ele é lido de baixo para cima.
+        var n1 = Number.parseInt(window.prompt('Digite o primeiro Número: ')) // (window.prompt) retorna para mim uma String mesmo que eu digite um numero. 
+        var n2 = Number.parseInt(window.prompt('Digite o Segundo Número: '))  // (window.prompt) retorna para mim uma String mesmo que eu digite um numero.
+        var soma = n1 + n2; // Converte de String para Número.
+        window.alert(`A soma entre ${n1} e ${n2} é igaul a ${soma}.`); // contatenaçao usando Template string.
+        // (number + number) para adição
+        // (string + string)  para concatenação
+    </script>
+</body>
+</html>
